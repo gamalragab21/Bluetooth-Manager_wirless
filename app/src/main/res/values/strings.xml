@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">wirlessTask</string>
+    <string name="bluetooth_manager">Bluetooth Manager...</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="you_need_to_open_bluetooth_to_continue">You need to open Bluetooth  to continue.</string>
+
+    <string name="you_need_to_allow_using_device_location_bluetooth_to_continue">You need to allow using device location and Bluetooth continue.</string>
+   <string name="no">No</string>
+   <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="available_devices">Available Devices</string>
+    <string name="device_address">device address</string>
+    <string name="device_name">device name</string>
+    <string name="no_paired_device_found">No Paired Device Founded ...</string>
+    <string name="no_available_device_found">No Available Device Founded ...</string>
+    <string name="mange_bluetooth">Mange Bluetooth</string>
+    <string name="confirm_location_bluetooth_is_opend">Please confirm you Opened Location and bluetooth to can continue</string>
+    <string name="choose_a_file_to_send">Choose a file to send</string>
+    <string name="device">Device: %1$s</string>
+    <string name="choose_a_file">Choose a file: %1$s</string>
+</resources>

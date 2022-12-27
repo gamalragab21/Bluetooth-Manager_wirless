@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph.xml"
+    app:startDestination="@id/entryPointFragment">
+
+    <fragment
+        android:id="@+id/entryPointFragment"
+        tools:layout="@layout/fragment_entry_point"
+        android:name="com.example.wirlesstask.ui.fragments.EntryPointFragment"
+        android:label="EntryPointFragment" >
+        <action
+            android:id="@+id/action_entryPointFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        tools:layout="@layout/fragment_home"
+        android:name="com.example.wirlesstask.ui.fragments.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_sendFileDataFragment"
+            app:destination="@id/sendFileDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendFileDataFragment"
+        tools:layout="@layout/fragment_send_file"
+        android:name="com.example.wirlesstask.ui.fragments.sendFile.SendFileDataFragment"
+        android:label="SendFileDataFragment" >
+        <argument
+            android:name="device"
+            app:argType="android.bluetooth.BluetoothDevice" />
+    </fragment>
+</navigation>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_6sdp"
+        android:textSize="@dimen/_12ssp"
+        android:text="Paired Devices"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/_10sdp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_no_paired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_paired_device_found"
+        android:textSize="@dimen/_14ssp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tv_paired_devices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_available_devices"
+        app:layout_constraintStart_toStartOf="@id/tv_paired_devices"
+        android:fontFamily="@font/poppins_semibold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/paired_devices_recycler_view"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_paired_devices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_paired_devices"
+        />
+    <TextView
+        android:id="@+id/tv_available_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_6sdp"
+        android:textSize="@dimen/_12ssp"
+        android:text="@string/available_devices"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paired_devices_recycler_view"
+        android:layout_margin="@dimen/_10sdp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/available_devices_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tv_available_devices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_available_devices"
+        />
+    <TextView
+        android:id="@+id/tv_no_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_available_device_found"
+        android:textSize="@dimen/_14ssp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tv_available_devices"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="@dimen/_15sdp"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintStart_toStartOf="@id/tv_available_devices"
+        android:fontFamily="@font/poppins_semibold"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--  For Default  -->
+    <color name="colorPrimary">#0C0C0C</color>
+    <color name="colorPrimaryVariant">#FFFFFFFF</color>
+    <color name="colorOnPrimary">#F6F5FA</color>
+
+    <color name="greyColor">#a5a5a5</color>
+    <color name="greyColor_black">#595858</color>
+    <color name="grey_border">#F8F7F7</color>
+    <color name="btn_dis_enable">#504F4F</color>
+    <color name="colorBlackHalfOpacity">#80000000</color>
+    <color name="colorCancel">#db1233</color>
+    <color name="blue_facebook">#1877F2</color>
+    <!--  For Network  -->
+    <color name="colorNetworkConnected">#00C853</color>
+    <color name="colorNetworkWaiting">#FDD835</color>
+    <color name="colorNetworkLost">#FF1744</color>
+</resources>

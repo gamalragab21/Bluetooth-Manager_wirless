@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseLayout">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/baseAppBar"
+        style="@style/AppBarLayout"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/baseToolbar"
+            style="@style/Toolbar"
+            app:layout_scrollFlags="snap"
+            tools:title="@tools:sample/full_names">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_action"
+                style="@style/ImageButton"
+                android:layout_gravity="end|center"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:visibility="gone"
+                tools:src="@tools:sample/avatars" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/baseBarFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baseAppBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
